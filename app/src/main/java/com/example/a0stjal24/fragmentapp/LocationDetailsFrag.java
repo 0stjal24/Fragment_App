@@ -29,14 +29,14 @@ public class LocationDetailsFrag extends MainActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);
+        setContentView(R.layout.activity_main);
         // This Line sets the user agent, a requirement to download OSM Maps
 
     }
 
     public View onCreateView (LayoutInflater inflater, ViewGroup parent,Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.locationdetailsfrag, parent) ;
+        return inflater.inflate(R.layout.activity_main, parent) ;
     }
 
     public void onActivityCreated(Bundle savedInstanceState)
@@ -52,9 +52,4 @@ public class LocationDetailsFrag extends MainActivity
         mv.getController();
     }
 
-    public void setText(String newText)
-    {
-        TextView editNewYork = (TextView) getView().findViewById(R.id.editNewYork);
-        editNewYork.setText(newText);
-    }
 }
